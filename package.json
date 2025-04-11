@@ -1,0 +1,36 @@
+{
+  "name": "project-prisma",
+  "version": "1.0.0",
+  "description": "This is a repository for learning prisma by building the egyptian football league database using postgreSQL",
+  "main": "index.js",
+  "prisma": {
+  "seed": "ts-node prisma/seed.ts"
+},
+  "scripts": {
+     "start": "node dist/index.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "build": "tsc",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:studio": "prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.6.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "prettier-plugin-prisma": "^5.0.0",
+    "prisma": "^6.6.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
